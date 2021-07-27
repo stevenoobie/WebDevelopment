@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primarycolor: #007AF3;
+}
+
+body {
+  margin: 0;
+  font-family: 'poppins';
+  background-color: #f2f2f2;
+}
+
+body ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body a {
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: white;
+  padding: 1.2em 1em;
+}
+
+.navbar .menu {
+  cursor: pointer;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.navbar .logo span {
+  color: var(--primarycolor);
+}
+
+.navbar menu {
+  float: right;
+}
+
+.navbar nav {
+  display: none;
+  background-color: #20272E;
+  color: white;
+  height: 100vh;
+  width: 60%;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  position: fixed;
+  padding: 1.3em;
+}
+
+.navbar nav img {
+  float: right;
+  display: block;
+  cursor: pointer;
+}
+
+.navbar nav .first-list {
+  margin-top: 4em;
+}
+
+.navbar nav ul {
+  text-align: right;
+}
+
+.navbar nav ul a {
+  font-size: 1.3em;
+  display: inline-block;
+  margin-top: .3em;
+  padding: .4em;
+}
+
+.navbar nav ul a:hover {
+  font-weight: bold;
+}
+
+nav.menu-show {
+  display: block;
+}
+
+.hero {
+  padding-top: 3em;
+}
+
+.hero .container {
+  padding: 1.5em;
+  text-align: center;
+}
+
+.hero .container .subhead {
+  color: gray;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+}
+
+.hero .container .head {
+  text-transform: capitalize;
+  font-size: 2em;
+}
+
+.hero .container .hero-cta .btn-blue {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background: var(--primarycolor);
+  border-radius: 5em;
+  padding: .5em 1em;
+  font-size: 1.2em;
+  display: inline-block;
+}
+
+.hero .container .hero-cta .watch-video {
+  display: block;
+  color: black;
+  margin-top: 1em;
+}
+
+.hero .container .hero-cta .watch-video img {
+  margin-right: .5em;
+}
+
+.hero .container .illustration {
+  width: 70%;
+  height: auto;
+  margin-top: .3em;
+}
+
+section.benefits {
+  background: #20272E;
+  color: white;
+}
+
+ul.benefits-list {
+  padding: 5em .3em;
+}
+
+ul.benefits-list li {
+  margin-left: 3.5em;
+  margin-bottom: 1em;
+  text-transform: capitalize;
+  font-size: 1.1em;
+  position: relative;
+}
+
+ul.benefits-list li:before {
+  content: ' ';
+  background-image: url("../images/bullet.svg");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -2em;
+  background-size: contain;
+}
+
+img.holding-phone {
+  display: none;
+}
+
+section.testmonials {
+  background: var(--primarycolor);
+  padding: 3em 2em;
+}
+
+section.testmonials li {
+  background: #006BD6;
+  border-radius: 1.5em;
+  margin-bottom: 3.5em;
+  color: white;
+  text-align: center;
+  padding: 0.8em .4em;
+}
+
+section.testmonials li img {
+  width: 80px;
+  border: solid .3em #006BD6;
+  margin-top: -2.2em;
+  border-radius: 5em;
+}
+
+section.contact .container {
+  padding: 3em 2em;
+}
+
+section.contact .container .left-contact h2 {
+  font-size: 1.8em;
+}
+
+section.contact .container .left-contact form {
+  margin-bottom: 2em;
+}
+
+section.contact .container .left-contact form label {
+  font-size: 1.2em;
+}
+
+section.contact .container .left-contact form input, section.contact .container .left-contact form textarea {
+  display: block;
+  border: grey;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+section.contact .container .left-contact form .submit {
+  cursor: pointer;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  background: var(--primarycolor);
+  border-radius: 5em;
+  padding: 0.8em 1.5em;
+  display: inline-block;
+  width: unset;
+}
+
+section.contact .container .right-contact iframe {
+  width: 100%;
+  height: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar .container nav {
+    background: none;
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar .container nav img {
+    display: none;
+  }
+  .navbar .container nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar .container nav a {
+    font-size: 1em;
+    padding: .1em .8em;
+    margin: 0;
+  }
+  .navbar .container nav .first-list {
+    margin-top: 0;
+  }
+  .navbar .container nav .chosen a {
+    font-weight: bold;
+  }
+  .navbar .container nav .btn-white {
+    color: var(--primarycolor);
+    border: solid 2.8px var(--primarycolor);
+    border-radius: 5em;
+    font-weight: bold;
+    margin-top: -.2em;
+  }
+  .navbar .container nav .btn-white:hover {
+    color: white;
+    background: var(--primarycolor);
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  section.hero {
+    padding: 10em 7em;
+  }
+  section.hero .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  section.hero .container .left-col {
+    text-align: left;
+  }
+  section.hero .container .left-col h1 {
+    font-size: 2.5em;
+    width: 70%;
+    margin: 0 0 .5em 0;
+    display: inline-block;
+  }
+  section.hero .container .left-col p {
+    font-size: .9em;
+  }
+  section.hero .container .left-col .hero-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.hero .container .left-col .hero-cta .btn-blue {
+    margin-right: .5em;
+  }
+  section.hero .container .left-col .illustration {
+    width: 50%;
+  }
+  section.benefits {
+    position: relative;
+    padding: 3em 0em;
+  }
+  section.benefits ul {
+    margin-left: 6em;
+    display: block;
+  }
+  section.benefits ul li {
+    font-size: 1.4em;
+  }
+  section.benefits ul li::before {
+    width: 30px;
+    height: 30px;
+  }
+  section.benefits .holding-phone {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -2em;
+    height: auto;
+    width: 350px;
+  }
+  section.testmonials {
+    padding: 10em .5em;
+  }
+  section.testmonials .container ul {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.testmonials .container ul li {
+    width: 30%;
+    padding: 0.8em .4em;
+    margin-left: .5em;
+    margin-right: .5em;
+    display: inline-block;
+  }
+  section.contact .container {
+    position: relative;
+  }
+  section.contact .container .left-contact {
+    width: 50%;
+  }
+  section.contact .container .right-contact {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+  }
+  section.contact .container .right-contact iframe {
+    height: 85%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
