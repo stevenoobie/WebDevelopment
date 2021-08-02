@@ -1,0 +1,926 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap");
+:root {
+  --primarycolor: #f69314;
+  --seconadrycolor: #777777;
+  --background: #f8f9fa;
+  --darkbackground: #333333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body .rounded-btn {
+  margin: auto;
+  margin-top: 3em;
+  border: none;
+  display: block;
+  background: var(--primarycolor);
+  color: white;
+  font-size: 1.2em;
+  font-family: "roboto";
+  text-transform: capitalize;
+  border-radius: 5em;
+  padding: 0.5em 1.2em;
+}
+
+.black-orange .chosen a {
+  color: var(--primarycolor);
+}
+
+.black-orange li a {
+  color: var(--seconadrycolor);
+}
+
+.black-orange li a:hover {
+  color: var(--primarycolor);
+}
+
+.show-mobile-nav {
+  display: block !important;
+}
+
+.navbar {
+  background: white;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  border-bottom: 2px solid #474b51;
+}
+
+.navbar .container {
+  position: relative;
+  padding: 2em 7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .container .logo {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: "roboto";
+  color: white;
+  font-weight: bold;
+}
+
+.navbar .container .menu-open-btn {
+  display: none;
+  cursor: pointer;
+  font-size: 1.8em;
+  color: white;
+}
+
+.navbar .container nav {
+  display: none;
+}
+
+.navbar .container nav .menu-close-btn {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar .container nav ul {
+  margin: 0;
+  margin-top: 0.5em;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.navbar .container nav ul .chosen {
+  color: white;
+}
+
+.navbar .container nav ul li {
+  cursor: pointer;
+  margin: 0 1em;
+  font-size: 1em;
+  font-family: "roboto";
+  text-decoration: none;
+  color: #999999;
+}
+
+.navbar .container nav ul li:hover {
+  color: white;
+}
+
+section.hero {
+  background-image: url("https://onclickwebdesign.com/wp-content/uploads/hero_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+section.hero .fade {
+  background: rgba(52, 58, 64, 0.9);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+section.hero .hero-text {
+  color: white;
+  z-index: 2;
+  top: 50%;
+  text-align: center;
+  font-family: "playfair";
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: -75px auto 0;
+  width: 500px;
+}
+
+section.hero .hero-text h1 {
+  font-size: 2.5em;
+}
+
+section.hero .hero-text p {
+  font-size: 1em;
+  line-height: 1.5em;
+  font-family: "roboto";
+}
+
+section.steps {
+  margin-top: 100vh;
+  background: var(--background);
+}
+
+section.steps .container {
+  padding: 2em 7em;
+}
+
+section.steps .container h2 {
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "playfair display";
+  font-size: 2.5em;
+  color: var(--primarycolor);
+}
+
+section.steps .container .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.steps .container .flex div {
+  padding: 1em 1em;
+  text-align: center;
+}
+
+section.steps .container .flex div span {
+  font-size: 2em;
+  color: var(--primarycolor);
+}
+
+section.steps .container .flex div h3 {
+  font-family: "roboto";
+  font-weight: 400;
+}
+
+section.steps .container .flex div p {
+  font-family: "roboto";
+  color: var(--seconadrycolor);
+  line-height: 1.5em;
+}
+
+section.properties .container {
+  padding: 2em 7em;
+}
+
+section.properties .container h2 {
+  text-transform: capitalize;
+  text-align: left;
+  font-family: "playfair display";
+  font-size: 2.5em;
+  color: var(--primarycolor);
+}
+
+section.properties .container img {
+  width: 100%;
+  height: auto;
+}
+
+section.properties .container .slick-slide {
+  padding: 0 15px;
+}
+
+section.properties .container .property-data {
+  color: var(--seconadrycolor);
+  font-family: "roboto";
+}
+
+section.properties .container .property-data .price {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: black;
+}
+
+section.properties .container .property-data .beds {
+  font-size: 0.8em;
+  padding-right: 10px;
+  border-right: 1px solid var(--seconadrycolor);
+}
+
+section.properties .container .property-data .baths {
+  font-size: 0.8em;
+  padding: 0 10px 0 5px;
+  border-right: 1px solid var(--seconadrycolor);
+}
+
+section.properties .container .property-data .sqft {
+  font-size: 0.8em;
+  padding-left: 5px;
+}
+
+section.properties .container .property-data address {
+  margin-top: 10px;
+  font-style: initial;
+  font-size: 0.8em;
+}
+
+section.agents {
+  padding-bottom: 3em;
+  border-bottom: 1px solid #cccccc;
+}
+
+section.agents .container {
+  padding: 2em 7em;
+}
+
+section.agents .container h2 {
+  padding-left: 0.2em;
+  text-transform: capitalize;
+  text-align: left;
+  font-family: "playfair display";
+  font-size: 2.5em;
+  color: var(--primarycolor);
+  line-height: 0.2em;
+}
+
+section.agents .container .big-paragraph {
+  padding-left: 0.3em;
+  font-family: "roboto";
+  color: var(--seconadrycolor);
+  font-size: 1.2em;
+  width: 60%;
+}
+
+section.agents .container .real-state-agents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.agents .container .real-state-agents .card {
+  background: #f0f0f0;
+  margin: 0.5em 0.5em;
+  width: 31.5%;
+}
+
+section.agents .container .real-state-agents .card img {
+  width: 100%;
+  height: auto;
+}
+
+section.agents .container .real-state-agents .card .information {
+  padding: 0.5em;
+}
+
+section.agents .container .real-state-agents .card .information h3 {
+  font-family: "playfair display";
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 0.1em;
+}
+
+section.agents .container .real-state-agents .card .information p {
+  font-family: "roboto";
+  color: var(--seconadrycolor);
+  font-size: 0.9em;
+  text-transform: capitalize;
+}
+
+section.we-are-the-best {
+  margin-top: 3em;
+}
+
+section.we-are-the-best .container {
+  padding: 2em 7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.we-are-the-best .container img {
+  width: 50%;
+}
+
+section.we-are-the-best .container .points {
+  margin-left: 8em;
+}
+
+section.we-are-the-best .container .points h2 {
+  padding-left: 0.2em;
+  text-transform: capitalize;
+  text-align: left;
+  font-family: "playfair display";
+  font-size: 2.5em;
+  color: var(--primarycolor);
+  margin: 0;
+  padding: 0;
+}
+
+section.we-are-the-best .container .big-paragraph {
+  font-family: "roboto";
+  color: var(--seconadrycolor);
+  font-size: 1.2em;
+}
+
+section.we-are-the-best .container .text {
+  font-family: "roboto";
+  color: var(--seconadrycolor);
+  font-size: 1em;
+}
+
+section.we-are-the-best .container ul {
+  padding-left: 1em;
+}
+
+section.we-are-the-best .container ul li {
+  color: var(--seconadrycolor);
+  font-family: "roboto";
+  line-height: 2em;
+}
+
+section.we-are-the-best .container .rounded-btn {
+  display: inline-block;
+}
+
+section.services {
+  margin-top: 3em;
+  background: var(--background);
+  padding-bottom: 3em;
+  border-bottom: 1px solid #cccccc;
+}
+
+section.services .container {
+  padding: 2em 7em;
+  text-align: center;
+}
+
+section.services .container h2 {
+  text-transform: capitalize;
+  font-family: "playfair display";
+  font-size: 2.5em;
+  color: var(--primarycolor);
+}
+
+section.services .container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.services .container .cards .card {
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 31.5%;
+  margin-bottom: 2em;
+}
+
+section.services .container .cards .card span {
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  color: var(--primarycolor);
+  font-size: 2.5em;
+}
+
+section.services .container .cards .card .card-elements {
+  padding-left: 3.2em;
+  text-align: left;
+  color: var(--seconadrycolor);
+  font-family: "roboto";
+}
+
+section.services .container .cards .card .card-elements h3 {
+  font-weight: 400;
+  font-size: 1.3em;
+  margin-bottom: 0;
+}
+
+section.services .container .cards .card .card-elements p {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.8em;
+}
+
+section.services .container .cards .card .card-elements a {
+  text-decoration: none;
+  color: var(--primarycolor);
+}
+
+section.testimonials {
+  padding-top: 3em;
+  margin-bottom: 3em;
+}
+
+section.testimonials h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "playfair display";
+  font-size: 2.5em;
+  color: var(--primarycolor);
+}
+
+section.testimonials .testmonial {
+  font-family: "roboto";
+  color: var(--seconadrycolor);
+  text-align: center;
+}
+
+section.testimonials .testmonial blockquote {
+  font-size: 1.2em;
+  font-style: italic;
+  padding: 0 3em;
+  line-height: 1.5em;
+}
+
+section.testimonials .testmonial .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.testimonials .testmonial .caption img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5em;
+}
+
+section.testimonials .testmonial .caption .name {
+  margin: 20px 0 0 10px;
+  text-transform: capitalize;
+}
+
+/* Slick */
+.slick-next:before,
+.slick-prev:before {
+  color: black;
+  font-size: 40px;
+}
+
+.slick-next {
+  right: 100px;
+}
+
+.slick-prev {
+  left: 100px;
+}
+
+.slick-dots li button:before {
+  margin-top: 20px;
+  font-size: 10px;
+  line-height: 20px;
+}
+
+/*End Slick*/
+section.contact {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background: var(--background);
+}
+
+section.contact h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "playfair display";
+  font-size: 2.5em;
+  color: var(--primarycolor);
+}
+
+section.contact .container {
+  padding: 2em 7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.contact .container .contact-form {
+  background: white;
+  text-align: left;
+  padding: 3em 1em;
+  width: 55%;
+}
+
+section.contact .container .contact-form p {
+  text-transform: capitalize;
+  font-size: 1.5em;
+  font-family: "playfair";
+  margin-bottom: 2em;
+}
+
+section.contact .container .contact-form input,
+section.contact .container .contact-form textarea {
+  margin-top: 0.3em;
+  display: block;
+  width: 100%;
+  font-family: "roboto";
+  font-size: 1.1em;
+  color: var(--seconadrycolor);
+  padding: 0.5em 0;
+  margin-bottom: 1.5em;
+  border: 1px solid #ced4da;
+}
+
+section.contact .container .contact-form input:focus,
+section.contact .container .contact-form textarea:focus {
+  font-family: "roboto";
+  font-size: 1.1em;
+  border: 1px solid #ced4da;
+}
+
+section.contact .container .contact-form input {
+  border-radius: 5em;
+}
+
+section.contact .container .contact-form textarea {
+  border-radius: 1em;
+  resize: none;
+}
+
+section.contact .container .contact-form label {
+  font-family: "roboto";
+}
+
+section.contact .container .contact-form .rounded-btn {
+  display: inline-block;
+  margin-top: 0;
+}
+
+section.contact .container .information {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: white;
+  text-align: left;
+  padding: 3em 1em;
+  font-family: "roboto";
+  width: 35%;
+  color: var(--seconadrycolor);
+}
+
+section.contact .container .information label {
+  display: block;
+  font-weight: bold;
+}
+
+section.contact .container .information address {
+  margin: 0.5em 0 1em 0;
+  font-style: normal;
+  width: 95%;
+}
+
+section.contact .container .information .colored-text {
+  color: var(--primarycolor);
+  margin-top: 0.5em;
+}
+
+section.footer {
+  background: var(--darkbackground);
+  padding: 5em 0;
+}
+
+section.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 5em;
+  padding: 0em 2em 5em 2em;
+  font-family: "roboto";
+  border-bottom: 1px solid var(--seconadrycolor);
+  margin-bottom: 3em;
+}
+
+section.footer .container h3 {
+  color: white;
+  font-family: "playfair display";
+  font-size: 1.1em;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+section.footer .container .about-stated {
+  width: 50%;
+}
+
+section.footer .container .about-stated p {
+  text-align: left;
+  color: var(--seconadrycolor);
+  width: 60%;
+  line-height: 1.5em;
+  font-size: 1.1em;
+}
+
+section.footer .container .quick-links {
+  width: 15%;
+}
+
+section.footer .container .quick-links ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+section.footer .container .quick-links li {
+  padding: 0.5em 0;
+}
+
+section.footer .container .quick-links li a {
+  color: var(--seconadrycolor);
+  cursor: pointer;
+}
+
+section.footer .container .quick-links li a:hover {
+  color: white;
+}
+
+section.footer .container .subscribe .subscribe-input {
+  width: 100%;
+}
+
+section.footer .container .subscribe .subscribe-input input {
+  border: 1px solid var(--seconadrycolor);
+  background: var(--darkbackground);
+  border-radius: 5em 0 0 5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px;
+  font-size: 15px;
+  color: white;
+  font-family: "roboto";
+}
+
+section.footer .container .subscribe .subscribe-input button {
+  margin-left: 0;
+  padding-left: 0;
+  background: var(--primarycolor);
+  border: none;
+  border-radius: 0 5em 5em 0;
+  padding: 16px;
+  margin-bottom: 1px;
+  margin-left: -4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+section.footer .container .subscribe .subscribe-input button:hover {
+  background: white;
+  color: var(--primarycolor);
+}
+
+section.footer .container .subscribe ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--seconadrycolor);
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+section.footer .container .subscribe ul span {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+section.footer p {
+  text-align: center;
+  color: var(--seconadrycolor);
+}
+
+section.footer p .fa {
+  color: red;
+}
+
+@media screen and (min-width: 769px) {
+  .navbar .container nav {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1113px) {
+  .navbar .container {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  section.steps .container {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  section.properties .container {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  section.agents .container {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  section.we-are-the-best .container {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  section.services .container {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  section.contact .container {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  section.footer .container {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 921px) {
+  section.agents .container {
+    margin: auto;
+  }
+  section.agents .container .real-state-agents .card {
+    width: 46%;
+  }
+  section.services .container .cards .card {
+    width: 48%;
+  }
+  section.footer .container .subscribe .subscribe-input input {
+    font-size: 10px;
+    padding: 10px;
+  }
+  section.footer .container .subscribe .subscribe-input button {
+    font-size: 10px;
+    padding: 11px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .container .menu-open-btn {
+    display: block;
+  }
+  .navbar .container nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 5px;
+            box-shadow: 0px 0px 5px;
+    height: 100vh;
+    padding: 0 1em 0 8em;
+    font-size: 1.2em;
+  }
+  .navbar .container nav .menu-close-btn {
+    display: block;
+    font-size: 2em;
+    right: 0.5em;
+    top: 0.5em;
+    color: var(--seconadrycolor);
+    position: fixed;
+  }
+  .navbar .container nav ul {
+    margin-top: 6em;
+    text-align: right;
+    display: block;
+  }
+  .navbar .container nav ul li {
+    margin: 1em 0;
+  }
+  section.hero .hero-text {
+    width: 350px;
+  }
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 20px;
+  }
+  section.properties .container img {
+    width: 95%;
+  }
+  section.services .container .cards .card p {
+    font-size: 0.7em;
+  }
+  section.we-are-the-best .container img {
+    display: none;
+  }
+  section.we-are-the-best .container .points {
+    margin: 0;
+  }
+  blockquote.quote {
+    margin: 0;
+  }
+  section.contact .container {
+    display: block;
+  }
+  section.contact .container .contact-form {
+    width: 100%;
+    padding: 3em 0.2em;
+  }
+  section.contact .container .contact-form input, section.contact .container .contact-form textarea {
+    width: 80%;
+  }
+  section.contact .container .information {
+    padding: 3em 0.2em;
+    margin-top: 2em;
+    width: 100%;
+  }
+  section.footer .container {
+    display: block;
+  }
+  section.footer .container .about-stated {
+    width: 100%;
+  }
+  section.footer .container .about-stated p {
+    width: 100%;
+  }
+  section.footer .container .quick-links {
+    width: 100%;
+  }
+  section.footer .container .subscribe .subscribe-input input {
+    font-size: 15px;
+    padding: 15px;
+  }
+  section.footer .container .subscribe .subscribe-input button {
+    font-size: 15px;
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 480px) {
+  section.hero .hero-text {
+    width: 250px;
+  }
+  section.agents .container .real-state-agents .card {
+    width: 100%;
+  }
+  section.services .container .cards .card {
+    width: 100%;
+  }
+  section.steps .container .flex {
+    display: block;
+  }
+}
+/*# sourceMappingURL=main.css.map */
